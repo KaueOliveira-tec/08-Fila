@@ -108,6 +108,7 @@ void remove()
 		cout << "Fila vazia. \n";
 	}
 	else {
+		cout << "Elemento: " << inicio->valor << endl;
 		inicio->prox = inicio;
 		free(del);
 	}

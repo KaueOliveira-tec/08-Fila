@@ -107,9 +107,15 @@ void remove()
 	if (inicio == NULL) {
 		cout << "Fila vazia. \n";
 	}
+	else if (inicio == fim){
+		cout << del->valor << endl;
+		free(del);
+		inicio = NULL;
+		fim = NULL;
+	}
 	else {
-		cout << "Elemento: " << inicio->valor << endl;
-		inicio->prox = inicio;
+		cout << del->valor << endl;
+		inicio = inicio->prox;
 		free(del);
 	}
 
